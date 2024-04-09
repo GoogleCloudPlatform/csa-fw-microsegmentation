@@ -18,9 +18,9 @@
 
 #! /bin/bash
 cat <<EOF > /etc/apt/sources.list
-deb https://packages.cloud.google.com/apt debian-bullseye-mirror main
-deb https://packages.cloud.google.com/apt debian-bullseye-security-mirror main
-deb https://packages.cloud.google.com/apt debian-bullseye-updates-mirror main
+deb https://packages.cloud.google.com/apt debian-bookworm-mirror main
+deb https://packages.cloud.google.com/apt debian-bookworm-security-mirror main
+deb https://packages.cloud.google.com/apt debian-bookworm-updates-mirror main
 EOF
 apt update
 apt -y install apache2
