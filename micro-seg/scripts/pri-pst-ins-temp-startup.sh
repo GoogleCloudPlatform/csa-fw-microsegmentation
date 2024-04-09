@@ -22,6 +22,7 @@ deb https://packages.cloud.google.com/apt debian-bookworm-mirror main
 deb https://packages.cloud.google.com/apt debian-bookworm-security-mirror main
 deb https://packages.cloud.google.com/apt debian-bookworm-updates-mirror main
 EOF
+rm -rf /etc/apt/sources.list.d/*
 apt update
 apt -y install apache2
 apt -y install libapache2-mod-php
