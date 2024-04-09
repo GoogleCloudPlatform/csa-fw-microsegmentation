@@ -45,7 +45,7 @@ resource "google_compute_instance_template" "pri_insttmpl_pplapp_presentation" {
   }
   // Create a new boot disk from an image
   disk {
-    source_image = "debian-cloud/debian-11"
+    source_image = "debian-cloud/debian-12"
     auto_delete  = true
     boot         = true
   }
@@ -194,7 +194,7 @@ resource "google_compute_instance_template" "pri_insttmpl_pplapp_middleware" {
   }
   // Create a new boot disk from an image
   disk {
-    source_image = "debian-cloud/debian-11"
+    source_image = "debian-cloud/debian-12"
     auto_delete  = true
     boot         = true
 
@@ -359,7 +359,7 @@ resource "google_compute_instance_template" "sec_insttmpl_pplapp_presentation" {
   }
   // Create a new boot disk from an image
   disk {
-    source_image = "debian-cloud/debian-11"
+    source_image = "debian-cloud/debian-12"
     auto_delete  = true
     boot         = true
 
@@ -512,7 +512,7 @@ resource "google_compute_instance_template" "sec_insttmpl_pplapp_middleware" {
   }
   // Create a new boot disk from an image
   disk {
-    source_image = "debian-cloud/debian-11"
+    source_image = "debian-cloud/debian-12"
     auto_delete  = true
     boot         = true
 
