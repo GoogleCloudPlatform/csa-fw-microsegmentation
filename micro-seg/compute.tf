@@ -88,7 +88,7 @@ resource "null_resource" "pri_insttmpl_pplapp_presentation" {
   --shielded-secure-boot \
   --shielded-vtpm \
   --machine-type=f1-micro \
-  --image-family="debian-11" \
+  --image-family="debian-12" \
   --image-project=debian-cloud \
   --configure-disk=auto-delete=true \
   --metadata-from-file=startup-script=scripts/pri-pst-ins-temp-startup.sh \
@@ -246,7 +246,7 @@ resource "null_resource" "pri_insttmpl_pplapp_middleware" {
   --shielded-secure-boot \
   --shielded-vtpm \
   --machine-type=f1-micro \
-  --image-family="debian-11" \
+  --image-family="debian-12" \
   --image-project=debian-cloud \
   --configure-disk=auto-delete=true \
   --metadata-from-file=startup-script=scripts/pri-mdl-ins-temp-startup.sh \
@@ -406,7 +406,7 @@ resource "null_resource" "sec_insttmpl_pplapp_presentation" {
   --shielded-secure-boot \
   --shielded-vtpm \
   --machine-type=f1-micro \
-  --image-family="debian-11" \
+  --image-family="debian-12" \
   --image-project=debian-cloud \
   --configure-disk=auto-delete=true \
   --metadata-from-file=startup-script=scripts/sec-pst-ins-temp-startup.sh \
@@ -563,7 +563,7 @@ resource "null_resource" "sec_insttmpl_pplapp_middleware" {
   --shielded-secure-boot \
   --shielded-vtpm \
   --machine-type=f1-micro \
-  --image-family="debian-11" \
+  --image-family="debian-12" \
   --image-project=debian-cloud \
   --configure-disk=auto-delete=true \
   --metadata-from-file=startup-script=scripts/sec-mdl-ins-temp-startup.sh \
