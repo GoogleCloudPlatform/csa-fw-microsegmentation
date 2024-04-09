@@ -32,6 +32,7 @@ apt -y install composer
  DB_SEC=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attributes/DB_SEC" -H "Metadata-Flavor: Google")
  PROJ_ID=$(curl "http://metadata.google.internal/computeMetadata/v1/instance/attributes/PROJ_ID" -H "Metadata-Flavor: Google")
 export HOME="/var/www"
+export COMPOSER_ALLOW_SUPERUSER=1
 composer -d /var/www require google/cloud-secret-manager
 service apache2 reload
 rm /var/www/html/index.html
